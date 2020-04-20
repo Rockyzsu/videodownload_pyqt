@@ -1,2 +1,9 @@
 .idea/
 __pycache__
+*.flv
+*.mp4
+*.xml
+.idea/
+__pycache__
+dist/
+build/
