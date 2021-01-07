@@ -25,14 +25,14 @@
      <x>30</x>
      <y>70</y>
      <width>551</width>
-     <height>61</height>
+     <height>65</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout_2">
     <item row="0" column="2">
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="addqueue">
       <property name="text">
-       <string>下载</string>
+       <string>添加到队列</string>
       </property>
      </widget>
     </item>
@@ -52,7 +52,14 @@
       </property>
      </spacer>
     </item>
-    <item row="0" column="0">
+    <item row="1" column="2">
+     <widget class="QPushButton" name="download">
+      <property name="text">
+       <string>下载</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" rowspan="2">
      <widget class="QLineEdit" name="lineEdit"/>
     </item>
    </layout>
