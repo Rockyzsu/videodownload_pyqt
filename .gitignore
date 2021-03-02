@@ -7,3 +7,6 @@ __pycache__
 __pycache__
 dist/
 build/
+queue
+applog
+*.download
