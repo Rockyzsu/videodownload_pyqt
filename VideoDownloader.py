@@ -43,6 +43,21 @@ class VideoDownload(QMainWindow, Ui_Form):
             self.task_dict = pickle.load(self.fp)
         self.show()
 
+
+    @property
+    def pending_task(self):
+        return self.task_dict['Todo']
+
+    def delete_task(self,id):
+        try:
+            self.task_dict['Todo'].remove(id)
+
+        except Exception as e:
+            print(e)
+
+    def show_pending(self):
+        print(self.pending_task)
+        
     def closeEvent(self, event):
 
         self.update_file()
