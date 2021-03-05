@@ -75,6 +75,9 @@ class VideoDownload(QMainWindow, Ui_Form):
                                                          "C:/",
                                                          "All Files (*);;Text Files (*.txt)")  # 设置文件扩展名过滤,注意用双分号间隔
 
+        if not filename:
+            return
+            
         url_list = self.read_from_file(fileName)
         for url in url_list:
             if len(url) > 5 and url.startswith('http'):
